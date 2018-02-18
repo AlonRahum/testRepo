@@ -1,0 +1,8 @@
+.itemsCon {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.react-swipeable-view-container  div{
+  overflow-y: hidden;
+}

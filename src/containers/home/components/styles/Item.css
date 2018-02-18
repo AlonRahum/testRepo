@@ -1,0 +1,29 @@
+.square{
+    width:30.5%;
+    height:130px;
+    text-align:center;
+    line-height: 60px;
+    margin: 5px 5px;
+}
+
+.barImg{
+    height:130px !important;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: -75px;
+}
+.colorsCat1{
+    background-color: magenta;
+    color: cornsilk;
+}
+
+.colorsCat2{
+    background-color: darkblue;
+    color: lavender;
+}
+
+.colorsCat3{
+    background-color:crimson;
+    color:floralwhite;
+}

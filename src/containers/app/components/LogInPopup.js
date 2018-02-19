@@ -13,6 +13,7 @@ const titleStyle = {
     paddingTop: '10px',
     paddingBottom: '0px',
     fontSize: '20px',
+    borderBottom: '1px solid lightgray',
 };
 
 const container = {
@@ -21,6 +22,10 @@ const container = {
 
 const textFiled = {
     marginTop: '-10px',
+}
+
+const signInBtn = {
+    textDecoration: 'underline',
 }
 
 export default class LogInPopup extends React.PureComponent {
@@ -60,6 +65,7 @@ export default class LogInPopup extends React.PureComponent {
                         />
                         <br/><br/>
                         <RaisedButton label="LOGIN" fullWidth={true} secondary={true} onClick={this.onSubmitClick}/>
+                        <FlatButton style={signInBtn} label="New here? Join Us!" fullWidth={true} onClick={this.onSubmitClick} />
                     </div>
                 </Dialog>
             </div>

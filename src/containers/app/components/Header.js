@@ -12,7 +12,7 @@ export default class Header extends React.PureComponent {
                     height: '55px',
                 }}
                 title='CHEERS'
-                iconElementRight={<RaisedButton secondary={true} label="SIGN IN"  style={{ marginTop: '5px'}}/>}
+                iconElementRight={<RaisedButton onClick={this.props.onLogInClick} secondary={true} label="LOG IN" style={{ marginTop: '5px'}}/>}
                 onLeftIconButtonTouchTap={this.props.onMenuClick}
             />
         );

@@ -7,6 +7,7 @@ import { routerReducer } from 'react-router-redux'
 const initialState = {
     isLoading: false,
     isDrawerOpen: false,
+    isLoginPopupOpen: false,
 }
 
 const app = (state = initialState, action) => {
@@ -23,8 +24,14 @@ const app = (state = initialState, action) => {
                 isLoading: !state.isLoading
             }
 
+        case Actions.types.TOGGLE_LOGIN_POPUP:
+            return {
+                ...state,
+                isLoginPopupOpen: !state.isLoginPopupOpen
+            }
+
         default:
-            return state
+            return state;
     }
 }
 
